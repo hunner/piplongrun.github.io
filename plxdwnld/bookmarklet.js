@@ -33,8 +33,9 @@ if (typeof plxDwnld === "undefined") {
                     callback(request.responseXML);
                 }
             };
-            request.open("GET", url);
-            request.send();
+            navigator.clipboard.writeText(url);
+            //request.open("GET", url);
+            //request.send();
         };
 
         const getMetadata = function(xml) {
